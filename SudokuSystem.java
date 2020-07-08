@@ -3,6 +3,7 @@ import java.util.*;
 public class SudokuSystem {
     private int[][] data;
 
+    /*
     public static void main(String[] args) {
         System.out.println("This is a Sudoku solving machine.");
         System.out.println("Use 0 to represent empty entry.");
@@ -32,9 +33,11 @@ public class SudokuSystem {
         }
         System.out.println(system.toString());
     }
+    */
 
     public SudokuSystem(int[][] tdr) {
         this.data = tdr;
+        this.solve();
     }
 
     // back-tracking algorithm
@@ -122,5 +125,13 @@ public class SudokuSystem {
             sb.append("\n");
         }
         return sb.toString();
+    }
+
+    public int[][] getData() {
+        return data;
+    }
+
+    public int getEntry(int x, int y) {
+        return data[x][y];
     }
 }
