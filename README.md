@@ -1,4 +1,6 @@
 # Sudoku
 Using Java to solve a Sudoku
-## 2020.7.7
+## Jul.7 2020
 Added graphical interface
+## Aug.8 2020
+Added clear, generate, and check features.
